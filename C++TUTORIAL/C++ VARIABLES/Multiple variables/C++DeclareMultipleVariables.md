@@ -11,3 +11,4 @@ You can also assign the same value to multiple variables in one line:
 int x, y, z;
 x = y = z = 50;
 cout << x + y + z;
+

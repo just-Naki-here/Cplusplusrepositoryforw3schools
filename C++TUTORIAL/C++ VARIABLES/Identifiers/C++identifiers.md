@@ -20,3 +20,4 @@ The general rules for naming variables are:
 -Names are case-sensitive (myVar and myvar are different variables)
 -Names cannot contain whitespaces or special characters like !, #, %, etc.
 -Reserved words (like C++ keywords, such as int) cannot be used as names
+

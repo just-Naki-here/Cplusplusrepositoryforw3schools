@@ -22,4 +22,4 @@ const int minutesPerHour = 60;
 This however, will not work:
 
 const int minutesPerHour;
-minutesPerHour = 60; // error
+minutesPerHour = 60; // error 

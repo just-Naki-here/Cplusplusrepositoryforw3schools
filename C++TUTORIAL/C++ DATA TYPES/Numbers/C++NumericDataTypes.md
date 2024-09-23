@@ -27,3 +27,4 @@ float f1 = 35e3;
 double d1 = 12E4;
 cout << f1;
 cout << d1;
+
