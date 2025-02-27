@@ -1,9 +1,9 @@
 C++ cstring Functions
-The <cstring> library has many functions that allow you to perform tasks on arrays and C-style strings.
+The <cstring> library has many functions that allow you to perform tasks on arrays and C-style strings.<br>
 
-Note that C-style strings are different than regular strings. A C-style string is an array of characters, created with the char type. To learn more about C-style strings, read our C Strings Tutorial.
+Note that C-style strings are different than regular strings. A C-style string is an array of characters, created with the char type. To learn more about C-style strings, read our C Strings Tutorial.<br>
 
-A list of all cstring functions can be found in the table below.
+A list of all cstring functions can be found in the table below.<br>
 | Function   | Description                                                                                                                       |
 |------------|-----------------------------------------------------------------------------------------------------------------------------------|
 | memchr()   | Returns a pointer to the first occurrence of a value in a block of memory                                                         |

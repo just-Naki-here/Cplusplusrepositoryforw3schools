@@ -1,5 +1,5 @@
-C++ ctime Functions
-The <ctime> library has a variety of functions that allow you to measure dates and times.
+C++ ctime Functions<br>
+The <ctime> library has a variety of functions that allow you to measure dates and times.<br>
 
 | Function    | Description                                                                                                   |
 |-------------|---------------------------------------------------------------------------------------------------------------|

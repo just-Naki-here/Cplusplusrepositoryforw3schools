@@ -3,7 +3,7 @@ The <cmath> library has many functions that allow you to perform mathematical ta
 
 A list of all math functions can be found in the table below:
 | Function         | Description                                                                                                                             |
-|------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | abs(x)           | Returns the absolute value of x                                                                                                         |
 | acos(x)          | Returns the arccosine of x, in radians                                                                                                  |
 | acosh(x)         | Returns the hyperbolic arccosine of x                                                                                                   |
