@@ -1,4 +1,11 @@
-Real-Life Examples
+# Real-Life Examples
+
+## Table of Contents
+
+- [Overview](#overview)
+
+## Overview
+
 Let's get a bit more practical!
 
 Often in our examples, we simplify variable names to match their data type (myInt or myNum for int types, myChar for char types, and so on). This is done to avoid confusion.
@@ -28,7 +35,7 @@ int width = 6;
 int area;
 
 // Calculate the area of a rectangle
-area = length * width;
+area = length \* width;
 
 // Print the variables
 cout << "Length is: " << length << "\n";

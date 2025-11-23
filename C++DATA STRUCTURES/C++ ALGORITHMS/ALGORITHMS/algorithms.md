@@ -1,4 +1,21 @@
-C++ Algorithms
+# C++ Algorithms
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Example 1](#example-1)
+- [Example 2](#example-2)
+- [Example 3](#example-3)
+- [Example 4](#example-4)
+- [Example 5](#example-5)
+- [Example 6](#example-6)
+- [Example 7](#example-7)
+- [Example 8](#example-8)
+- [Example 9](#example-9)
+- [Example 10](#example-10)
+
+## Overview
+
 In the previous chapters, you learned that data structures (like vectors, lists, etc) are used to store and organize data.
 
 Algorithms are used to solve problems by sorting, searching, and manipulating data structures.
@@ -14,44 +31,61 @@ To sort elements in a data structure, you can use the sort() function.
 
 The sort() function takes iterators (typically a start iterator returned by begin() and an end iterator returned by end()) as parameters:
 
-Example
+## Example 1
+
+```cpp
 // Create a vector called cars that will store strings
 vector<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
 
 // Sort cars alphabetically
 sort(cars.begin(), cars.end());
+```
+
 By default, the elements are sorted in ascending order. In the example above, the elements are sorted alphabetically since they are strings.
 
 If we had a vector of integers, they would be sorted numerically:
 
-Example
+## Example 2
+
+```cpp
 // Create a vector called numbers that will store integers
 vector<int> numbers = {1, 7, 3, 5, 9, 2};
 
 // Sort numbers numerically
 sort(numbers.begin(), numbers.end());
+```
+
 To reverse the order, you can use rbegin() and rend() instead of begin() and end():
 
-Example
+## Example 3
+
+```cpp
 // Create a vector called numbers that will store integers
 vector<int> numbers = {1, 7, 3, 5, 9, 2};
 
 // Sort numbers numerically in reverse order
 sort(numbers.rbegin(), numbers.rend());
+```
+
 To only sort specific elements, you could write:
 
-Example
+## Example 4
+
+```cpp
 // Create a vector called numbers that will store integers
 vector<int> numbers = {1, 7, 3, 5, 9, 2};
 
 // Sort numbers numerically, starting from the fourth element (only sort 5, 9, and 2)
 sort(numbers.begin() + 3, numbers.end());
+```
+
 Searching Algorithms
 To search for specific elements in a vector, you can use the find() function.
 
 It takes three parameters: start_iterator, end_iterator, value, where value is the value to search for:
 
-Example
+## Example 5
+
 Seach for the number 3 in "numbers":
 
 // Create a vector called numbers that will store integers
@@ -61,7 +95,8 @@ vector<int> numbers = {1, 7, 3, 5, 9, 2};
 auto it = find(numbers.begin(), numbers.end(), 3);
 To search for the first element that is greater than a specific value, you can use the upper_bound() function:
 
-Example
+## Example 6
+
 Find the first value greater than 5 in "numbers":
 
 // Create a vector called numbers that will store integers
@@ -76,24 +111,33 @@ The upper_bound() function is typically used on sorted data structures. That's w
 
 To find the smallest element in a vector, use the min_element() function:
 
-Example
+## Example 7
+
+```cpp
 // Create a vector called numbers that will store integers
 vector<int> numbers = {1, 7, 3, 5, 9, 2};
 
 // Find the smallest number
 auto it = min_element(numbers.begin(), numbers.end());
+```
+
 To find the largest element, use the max_element() function:
 
-Example
+## Example 8
+
+```cpp
 // Create a vector called numbers that will store integers
 vector<int> numbers = {1, 7, 3, 5, 9, 2};
 
 // Find the largest number
 auto it = max_element(numbers.begin(), numbers.end());
+```
+
 Modifying Algorithms
 To copy elements from one vector to another, you can use the copy() function:
 
-Example
+## Example 9
+
 Copy elements from one vector to another:
 
 // Create a vector called numbers that will store integers
@@ -106,7 +150,8 @@ vector<int> copiedNumbers(6);
 copy(numbers.begin(), numbers.end(), copiedNumbers.begin());
 To fill all elements in a vector with a value, you can use the fill() function:
 
-Example
+## Example 10
+
 Fill all elements in the numbers vector with the value 35:
 
 // Create a vector called numbers that will store 6 integers

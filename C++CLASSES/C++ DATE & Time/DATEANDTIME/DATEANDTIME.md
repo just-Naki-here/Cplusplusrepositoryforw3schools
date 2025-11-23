@@ -1,16 +1,38 @@
-Date and Time
+# Date and Time
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Example 1](#example-1)
+- [Example 2](#example-2)
+- [Example 3](#example-3)
+- [Example 4](#example-4)
+- [Example 5](#example-5)
+- [Example 6](#example-6)
+- [Example 7](#example-7)
+- [Example 8](#example-8)
+- [Example 9](#example-9)
+- [Example 10](#example-10)
+
+## Overview
+
 The <ctime> library allows us to work with dates and times.
 
 To use it, you must import the <ctime> header file:
 
-Example
+## Example 1
+
+```cpp
 #include <ctime> // Import the ctime library
+```
+
 Display Current Date and Time
 The <ctime> library has a variety of functions to measure dates and times.
 
 The time() function gives us a timestamp representing the current date and time. We can use the ctime() function to show the date and time that a timestamp represents:
 
-Example
+## Example 2
+
 Display the current date:
 
 // Get the timestamp for the current date and time
@@ -51,7 +73,8 @@ The time() function can only create a timestamp for the current date, but we can
 
 The mktime() function converts a datetime structure into a timestamp.
 
-Example
+## Example 3
+
 Create a timestamp using the mktime() function:
 
 struct tm datetime;
@@ -75,7 +98,8 @@ Note: The mktime() function needs these members to have a value: tm_year, tm_mon
 Creating Datetime Structures
 The mktime() function also fills in the tm_wday and tm_yday members of the datetime structure with the correct values, which completes the structure and gives a valid datetime. It can be used, for example, to find the weekday of a given date:
 
-Example
+## Example 4
+
 Find the weekday of a specified date:
 
 // Create the datetime structure and use mktime to fill in the missing members
@@ -98,26 +122,29 @@ The gmtime() function returns a pointer to a structure representing the time in 
 
 These functions return a pointer to a datetime structure. If we want to make sure its value does not change unexpectedly we should make a copy of it by dereferencing the pointer. To learn about dereferencing, see the C++ Dereference tutorial.
 
-Example
+## Example 5
+
 Get a datetime structure and output the current hour:
 
 time_t timestamp = time(&timestamp);
-struct tm datetime = *localtime(&timestamp);
+struct tm datetime = \*localtime(&timestamp);
 
 cout << datetime.tm_hour;
 Display Dates
 So far we have been using the ctime() function to display the date contained in a timestamp. To display dates from a datetime structure we can use the asctime() function.
 
-Example
+## Example 6
+
 Display the date represented by a datetime structure:
 
 time_t timestamp = time(NULL);
-struct tm datetime = *localtime(&timestamp);
+struct tm datetime = \*localtime(&timestamp);
 
 cout << asctime(&datetime);
 Note: The asctime() function does not correct invalid dates. For example, if you set the day of the month to 32 it will display 32. The mktime() function can correct these kinds of errors:
 
-Example
+## Example 7
+
 Correct a date before displaying it:
 
 // Create the datetime structure and use mktime to correct mistakes
@@ -134,11 +161,12 @@ The ctime() and asctime() functions allow us to display the date but they do not
 
 To choose how a date is displayed we can use the strftime() function.
 
-Example
+## Example 8
+
 Represent the current date in different ways:
 
 time_t timestamp = time(NULL);
-struct tm datetime = *localtime(&timestamp);
+struct tm datetime = \*localtime(&timestamp);
 
 char output[50];
 
@@ -161,25 +189,26 @@ The third parameter allows us to choose how the date is formatted using format s
 The last parameter is a pointer to the datetime structure which contains the date we want to display.
 The following table has some useful format specifiers. For a more complete list, look at the strftime() reference page.
 
-Format Specifier	Description                             	Example
-%a	                Short representation of the weekday     	Fri
-%b	                Short representation of the month name	    Dec
-%B	                Full representation of the month name	    December
-%d	                Day of the month with leading zero	        09
-%e              	Day of the month with leading spaces	    9
-%H	                24-hour format of an hour	                14
-%I              	12-hour format of an hour	                02
-%M	                Minutes within an hour	                    30
-%p                  AM or PM	                                PM
-%S	                Seconds within a minute	                    01
-%y	                2-digit year representation             	23
-%Y	                4-digit year representation	                2023
+Format Specifier Description Example
+%a Short representation of the weekday Fri
+%b Short representation of the month name Dec
+%B Full representation of the month name December
+%d Day of the month with leading zero 09
+%e Day of the month with leading spaces 9
+%H 24-hour format of an hour 14
+%I 12-hour format of an hour 02
+%M Minutes within an hour 30
+%p AM or PM PM
+%S Seconds within a minute 01
+%y 2-digit year representation 23
+%Y 4-digit year representation 2023
 Measuring Time
 There are two different functions that can be used to measure differences in time.
 
 The difftime() function measures the number of seconds that passed between two different time stamps. This is useful when measuring time differences between dates.
 
-Example
+## Example 9
+
 Measure the time difference between two timestamps
 
 time_t now;
@@ -187,7 +216,7 @@ time_t nextyear;
 struct tm datetime;
 
 now = time(NULL);
-datetime = *localtime(&now);
+datetime = \*localtime(&now);
 datetime.tm_year = datetime.tm_year + 1;
 datetime.tm_mon = 0;
 datetime.tm_mday = 1;
@@ -202,13 +231,14 @@ The clock() function is useful for measuring short intervals of time while the p
 
 Each call to the clock function returns a special kind of timestamp measured in clocks (a unit of time that depends on how the library was implemented) which has a data type clock_t. To measure a time difference, store a timestamp at two different moments in time and then subtract them. The time difference is measured in clocks, but you can convert it into seconds by dividing it by the CLOCKS_PER_SEC constant.
 
-Example
+## Example 10
+
 Measure how long it takes for the program to run:
 
 clock_t before = clock();
 int k = 0;
 for(int i = 0; i < 100000; i++) {
-  k += i;
+k += i;
 }
 clock_t duration = clock() - before;
 cout << "Duration: " << (float)duration / CLOCKS_PER_SEC << " seconds";

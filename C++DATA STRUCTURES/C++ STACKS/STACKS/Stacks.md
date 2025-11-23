@@ -1,4 +1,18 @@
-C++ Stack
+# C++ Stack
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Example 1](#example-1)
+- [Example 2](#example-2)
+- [Example 3](#example-3)
+- [Example 4](#example-4)
+- [Example 5](#example-5)
+- [Example 6](#example-6)
+- [Example 7](#example-7)
+
+## Overview
+
 A stack stores multiple elements in a specific order, called LIFO.
 
 LIFO stands for Last in, First Out. To vizualise LIFO, think of a pile of pancakes, where pancakes are both added and removed from the top. So when removing a pancake, it will always be the last one you added. This way of organizing elements is called LIFO in computer science and programming.
@@ -22,7 +36,9 @@ stack<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
 Add Elements
 To add elements to the stack, use the .push() function, after declaring the stack:
 
-Example
+## Example 1
+
+```cpp
 // Create a stack of strings called cars
 stack<string> cars;
 
@@ -31,6 +47,8 @@ cars.push("Volvo");
 cars.push("BMW");
 cars.push("Ford");
 cars.push("Mazda");
+```
+
 The stack will look like this (remember that the last element added is the top element):
 
 Mazda (top element)
@@ -42,24 +60,34 @@ You cannot access stack elements by referring to index numbers, like you would w
 
 In a stack, you can only access the top element, which is done using the .top() function:
 
-Example
+## Example 2
+
+```cpp
 // Access the top element
-cout << cars.top();  // Outputs "Mazda"
+cout << cars.top(); // Outputs "Mazda"
+```
+
 Change the Top Element
 You can also use the .top function to change the value of the top element:
 
-Example
+## Example 3
+
+```cpp
 // Change the value of the top element
 cars.top() = "Tesla";
 
- // Access the top element
-cout << cars.top();  // Now outputs "Tesla" instead of "Mazda"
+// Access the top element
+cout << cars.top(); // Now outputs "Tesla" instead of "Mazda"
+```
+
 Remove Elements
 You can use the .pop() function to remove an element from the stack.
 
 This will remove the last element that was added to the stack:
 
-Example
+## Example 4
+
+```cpp
 // Create a stack of strings called cars
 stack<string> cars;
 
@@ -74,20 +102,32 @@ cars.pop();
 
 // Access the top element (Now Ford)
 cout << cars.top();
+```
+
 Get the Size of the Stack
 To find out how many elements a stack has, use the .size() function:
 
-Example
+## Example 5
+
+```cpp
 cout << cars.size();
+```
+
 Check if the Stack is Empty
 Use the .empty() function to find out if the stack is empty or not.
 
 The .empty() function returns 1 (true) if the stack is empty and 0 (false) otherwise:
 
-Example
+## Example 6
+
+```cpp
 stack<string> cars;
 cout << cars.empty(); // Outputs 1 (The stack is empty)
-Example
+```
+
+## Example 7
+
+```cpp
 stack<string> cars;
 
 cars.push("Volvo");
@@ -95,7 +135,8 @@ cars.push("BMW");
 cars.push("Ford");
 cars.push("Mazda");
 
-cout << cars.empty();  // Outputs 0 (not empty)
+cout << cars.empty(); // Outputs 0 (not empty)
+```
+
 Stacks and Queues
 Stacks are often mentioned together with Queues, which is a similar data structure described on the next page.
-

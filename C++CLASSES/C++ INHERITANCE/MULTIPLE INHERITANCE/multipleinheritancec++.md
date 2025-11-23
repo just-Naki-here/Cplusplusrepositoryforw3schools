@@ -1,21 +1,31 @@
-Multiple Inheritance
+# Multiple Inheritance
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Example 1](#example-1)
+
+## Overview
+
 A class can also be derived from more than one base class, using a comma-separated list:
 
-Example
+## Example 1
+
+```cpp
 // Base class
 class MyClass {
-  public:
-    void myFunction() {
-      cout << "Some content in parent class." ;
-    }
+public:
+void myFunction() {
+cout << "Some content in parent class." ;
+}
 };
 
 // Another base class
 class MyOtherClass {
-  public:
-    void myOtherFunction() {
-      cout << "Some content in another class." ;
-    }
+public:
+void myOtherFunction() {
+cout << "Some content in another class." ;
+}
 };
 
 // Derived class
@@ -23,8 +33,9 @@ class MyChildClass: public MyClass, public MyOtherClass {
 };
 
 int main() {
-  MyChildClass myObj;
-  myObj.myFunction();
-  myObj.myOtherFunction();
-  return 0;
+MyChildClass myObj;
+myObj.myFunction();
+myObj.myOtherFunction();
+return 0;
 }
+```

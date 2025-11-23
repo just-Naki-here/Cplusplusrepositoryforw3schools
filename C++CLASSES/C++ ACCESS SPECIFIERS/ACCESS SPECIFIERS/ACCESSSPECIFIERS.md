@@ -1,16 +1,28 @@
-Access Specifiers
+# Access Specifiers
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Example 1](#example-1)
+- [Example 2](#example-2)
+- [Example 3](#example-3)
+
+## Overview
 
 By now, you are quite familiar with the public keyword that appears in all of our class examples:
 
-Example
+## Example 1
 
+```cpp
 class MyClass { // The class
 
- public: // Access specifier
+public: // Access specifier
 
- // class members goes here
+// class members goes here
 
 };
+```
+
 
 The public keyword is an access specifier. Access specifiers define how the members (attributes and methods) of a class can be accessed. In the example above, the members are public - which means that they can be accessed and modified from outside the code.
 
@@ -26,29 +38,32 @@ protected - members cannot be accessed from outside the class, however, they can
 
 In the following example, we demonstrate the differences between public and private members:
 
-Example
+## Example 2
 
+```cpp
 class MyClass {
 
- public: // Public access specifier
+public: // Public access specifier
 
- int x; // Public attribute
+int x; // Public attribute
 
- private: // Private access specifier
+private: // Private access specifier
 
- int y; // Private attribute
+int y; // Private attribute
 
 };
 
 int main() {
 
- MyClass myObj;
+MyClass myObj;
+```
 
- myObj.x = 25; // Allowed (public)
 
- myObj.y = 50; // Not allowed (private)
+myObj.x = 25; // Allowed (public)
 
- return 0;
+myObj.y = 50; // Not allowed (private)
+
+return 0;
 
 }
 
@@ -62,12 +77,14 @@ Tip: It is considered good practice to declare your class attributes as private 
 
 Note: By default, all members of a class are private if you don't specify an access specifier:
 
-Example
+## Example 3
 
+```cpp
 class MyClass {
 
- int x; // Private attribute
+int x; // Private attribute
 
- int y; // Private attribute
+int y; // Private attribute
 
 };
+```

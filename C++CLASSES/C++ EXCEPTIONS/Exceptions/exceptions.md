@@ -1,4 +1,16 @@
-C++ Exceptions
+# C++ Exceptions
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Example 1](#example-1)
+- [Example 2](#example-2)
+- [Example 3](#example-3)
+- [Example 4](#example-4)
+- [Example 5](#example-5)
+
+## Overview
+
 When executing C++ code, different errors can occur: coding errors made by the programmer, errors due to wrong input, or other unforeseeable things.
 
 When an error occurs, C++ will normally stop and generate an error message. The technical term for this is: C++ will throw an exception (throw an error).
@@ -14,28 +26,30 @@ The catch statement allows you to define a block of code to be executed, if an e
 
 The try and catch keywords come in pairs:
 
-Example
+## Example 1
+
 try {
-  // Block of code to try
-  throw exception; // Throw an exception when a problem arise
+// Block of code to try
+throw exception; // Throw an exception when a problem arise
 }
 catch () {
-  // Block of code to handle errors
+// Block of code to handle errors
 }
 Consider the following example:
 
-Example
+## Example 2
+
 try {
-  int age = 15;
-  if (age >= 18) {
-    cout << "Access granted - you are old enough.";
-  } else {
-    throw (age);
-  }
+int age = 15;
+if (age >= 18) {
+cout << "Access granted - you are old enough.";
+} else {
+throw (age);
+}
 }
 catch (int myNum) {
-  cout << "Access denied - You must be at least 18 years old.\n";
-  cout << "Age is: " << myNum;
+cout << "Access denied - You must be at least 18 years old.\n";
+cout << "Age is: " << myNum;
 }
 Example explained
 We use the try block to test some code: If the age variable is less than 18, we will throw an exception, and handle it in our catch block.
@@ -44,35 +58,41 @@ In the catch block, we catch the error and do something about it. The catch stat
 
 If no error occurs (e.g. if age is 20 instead of 15, meaning it will be be greater than 18), the catch block is skipped:
 
-Example
+## Example 3
+
+```cpp
 int age = 20;
+```
+
 You can also use the throw keyword to output a reference number, like a custom error number/code for organizing purposes (505 in our example):
 
-Example
+## Example 4
+
 try {
-  int age = 15;
-  if (age >= 18) {
-    cout << "Access granted - you are old enough.";
-  } else {
-    throw 505;
-  }
+int age = 15;
+if (age >= 18) {
+cout << "Access granted - you are old enough.";
+} else {
+throw 505;
+}
 }
 catch (int myNum) {
-  cout << "Access denied - You must be at least 18 years old.\n";
-  cout << "Error number: " << myNum;
+cout << "Access denied - You must be at least 18 years old.\n";
+cout << "Error number: " << myNum;
 }
 Handle Any Type of Exceptions (...)
 If you do not know the throw type used in the try block, you can use the "three dots" syntax (...) inside the catch block, which will handle any type of exception:
 
-Example
+## Example 5
+
 try {
-  int age = 15;
-  if (age >= 18) {
-    cout << "Access granted - you are old enough.";
-  } else {
-    throw 505;
-  }
+int age = 15;
+if (age >= 18) {
+cout << "Access granted - you are old enough.";
+} else {
+throw 505;
+}
 }
 catch (...) {
-  cout << "Access denied - You must be at least 18 years old.\n";
+cout << "Access denied - You must be at least 18 years old.\n";
 }

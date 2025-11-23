@@ -1,4 +1,13 @@
-Omit Array Size
+# Omit Array Size
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Example 1](#example-1)
+- [Example 2](#example-2)
+
+## Overview
+
 In C++, you don't have to specify the size of the array. The compiler is smart enough to determine the size of the array based on the number of inserted values:
 
 string cars[] = {"Volvo", "BMW", "Ford"}; // Three array elements
@@ -10,19 +19,24 @@ However, the last approach is considered as "good practice", because it will red
 Omit Elements on Declaration
 It is also possible to declare an array without specifying the elements on declaration, and add them later:
 
-Example
+## Example 1
+
+```cpp
 string cars[5];
 cars[0] = "Volvo";
 cars[1] = "BMW";
 cars[2] = "Ford";
 cars[3] = "Mazda";
 cars[4] = "Tesla";
+```
+
 Note: The example above only works when you have specified the size of the array.
 
 If you don't specify the array size, an error occurs:
 
-Example
-string cars[];  // Array size is not specified
+## Example 2
+
+string cars[]; // Array size is not specified
 cars[0] = "Volvo";
 cars[1] = "BMW";
 cars[2] = "Ford";
