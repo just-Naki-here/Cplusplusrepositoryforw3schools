@@ -1,13 +1,24 @@
-Creating References
+# Creating References
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Example 1](#example-1)
+
+## Overview
+
 A reference variable is a "reference" to an existing variable, and it is created with the & operator:
 
-string food = "Pizza";  // food variable
-string &meal = food;    // reference to food
+string food = "Pizza"; // food variable
+string &meal = food; // reference to food
 Now, we can use either the variable name food or the reference name meal to refer to the food variable:
 
-Example
+## Example 1
+
+```cpp
 string food = "Pizza";
 string &meal = food;
 
-cout << food << "\n";  // Outputs Pizza
-cout << meal << "\n";  // Outputs Pizza
+cout << food << "\n"; // Outputs Pizza
+cout << meal << "\n"; // Outputs Pizza
+```

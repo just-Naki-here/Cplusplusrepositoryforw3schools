@@ -1,4 +1,13 @@
-C++ Arrays
+# C++ Arrays
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Example 1](#example-1)
+- [Example 2](#example-2)
+
+## Overview
+
 Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
 
 To declare an array, define the variable type, specify the name of the array followed by square brackets and specify the number of elements it should store:
@@ -15,18 +24,25 @@ You access an array element by referring to the index number inside square brack
 
 This statement accesses the value of the first element in cars:
 
-Example
+## Example 1
+
+```cpp
 string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};
 cout << cars[0];
 // Outputs Volvo
+```
+
 Note: Array indexes start with 0: [0] is the first element. [1] is the second element, etc.
 
 Change an Array Element
 To change the value of a specific element, refer to the index number:
 
 cars[0] = "Opel";
-Example
+## Example 2
+
+```cpp
 string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};
 cars[0] = "Opel";
 cout << cars[0];
 // Now outputs Opel instead of Volvo
+```

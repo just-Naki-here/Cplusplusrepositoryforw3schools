@@ -1,16 +1,25 @@
-C++ Switch Statements
+# C++ Switch Statements
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Example 1](#example-1)
+- [Example 2](#example-2)
+
+## Overview
+
 Use the switch statement to select one of many code blocks to be executed.
 
 Syntax
 switch(expression) {
-  case x:
-    // code block
-    break;
-  case y:
-    // code block
-    break;
-  default:
-    // code block
+case x:
+// code block
+break;
+case y:
+// code block
+break;
+default:
+// code block
 }
 This is how it works:
 
@@ -20,32 +29,36 @@ If there is a match, the associated block of code is executed
 The break and default keywords are optional, and will be described later in this chapter
 The example below uses the weekday number to calculate the weekday name:
 
-Example
+## Example 1
+
+```cpp
 int day = 4;
 switch (day) {
-  case 1:
-    cout << "Monday";
-    break;
-  case 2:
-    cout << "Tuesday";
-    break;
-  case 3:
-    cout << "Wednesday";
-    break;
-  case 4:
-    cout << "Thursday";
-    break;
-  case 5:
-    cout << "Friday";
-    break;
-  case 6:
-    cout << "Saturday";
-    break;
-  case 7:
-    cout << "Sunday";
-    break;
+case 1:
+cout << "Monday";
+break;
+case 2:
+cout << "Tuesday";
+break;
+case 3:
+cout << "Wednesday";
+break;
+case 4:
+cout << "Thursday";
+break;
+case 5:
+cout << "Friday";
+break;
+case 6:
+cout << "Saturday";
+break;
+case 7:
+cout << "Sunday";
+break;
 }
 // Outputs "Thursday" (day 4)
+```
+
 The break Keyword
 When C++ reaches a break keyword, it breaks out of the switch block.
 
@@ -58,16 +71,20 @@ A break can save a lot of execution time because it "ignores" the execution of a
 The default Keyword
 The default keyword specifies some code to run if there is no case match:
 
-Example
+## Example 2
+
+```cpp
 int day = 4;
 switch (day) {
-  case 6:
-    cout << "Today is Saturday";
-    break;
-  case 7:
-    cout << "Today is Sunday";
-    break;
-  default:
-    cout << "Looking forward to the Weekend";
+case 6:
+cout << "Today is Saturday";
+break;
+case 7:
+cout << "Today is Sunday";
+break;
+```
+
+default:
+cout << "Looking forward to the Weekend";
 }
 // Outputs "Looking forward to the Weekend"

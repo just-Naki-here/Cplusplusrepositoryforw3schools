@@ -1,9 +1,18 @@
-C++ For Loop
+# C++ For Loop
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Example 1](#example-1)
+- [Example 2](#example-2)
+
+## Overview
+
 When you know exactly how many times you want to loop through a block of code, use the for loop instead of a while loop:
 
 Syntax
 for (statement 1; statement 2; statement 3) {
-  // code block to be executed
+// code block to be executed
 }
 Statement 1 is executed (one time) before the execution of the code block.
 
@@ -13,10 +22,14 @@ Statement 3 is executed (every time) after the code block has been executed.
 
 The example below will print the numbers 0 to 4:
 
-Example
+## Example 1
+
+```cpp
 for (int i = 0; i < 5; i++) {
-  cout << i << "\n";
+cout << i << "\n";
 }
+```
+
 Example explained
 Statement 1 sets a variable before the loop starts (int i = 0).
 
@@ -27,7 +40,10 @@ Statement 3 increases a value (i++) each time the code block in the loop has bee
 Another Example
 This example will only print even values between 0 and 10:
 
-Example
+## Example 2
+
+```cpp
 for (int i = 0; i <= 10; i = i + 2) {
-  cout << i << "\n";
+cout << i << "\n";
 }
+```

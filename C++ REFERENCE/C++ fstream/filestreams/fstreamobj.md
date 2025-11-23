@@ -1,10 +1,17 @@
-C++ fstream classes
+# C++ fstream classes
+
+## Table of Contents
+
+- [Overview](#overview)
+
+## Overview
+
 The <fstream> library provides classes for reading and writing into files or data streams.<br>
 
 A list of useful fstream classes can be found in the table below.<br>
-| Class    | Description                                                                                     |
+| Class | Description |
 |----------|-------------------------------------------------------------------------------------------------|
-| filebuf  | A lower level file handling class used internally by the fstream, ifstream and ofstream classes |
-| fstream  | A class that can read and write to files                                                        |
-| ifstream | A class that can read from files                                                                |
-| ofstream | A class that can write to files                                                                 |
+| filebuf | A lower level file handling class used internally by the fstream, ifstream and ofstream classes |
+| fstream | A class that can read and write to files |
+| ifstream | A class that can read from files |
+| ofstream | A class that can write to files |

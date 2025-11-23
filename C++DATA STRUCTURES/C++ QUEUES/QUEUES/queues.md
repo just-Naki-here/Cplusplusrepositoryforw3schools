@@ -1,4 +1,18 @@
-C++ Queue
+# C++ Queue
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Example 1](#example-1)
+- [Example 2](#example-2)
+- [Example 3](#example-3)
+- [Example 4](#example-4)
+- [Example 5](#example-5)
+- [Example 6](#example-6)
+- [Example 7](#example-7)
+
+## Overview
+
 A queue stores multiple elements in a specific order, called FIFO.
 
 FIFO stands for First in, First Out. To visualize FIFO, think of a queue as people standing in line in a supermarket. The first person to stand in line is also the first who can pay and leave the supermarket. This way of organizing elements is called FIFO in computer science and programming.
@@ -24,7 +38,9 @@ To add elements to the queue, you can use the .push() function after declaring t
 
 The .push() function adds an element at the end of the queue:
 
-Example
+## Example 1
+
+```cpp
 // Create a queue of strings
 queue<string> cars;
 
@@ -33,6 +49,8 @@ cars.push("Volvo");
 cars.push("BMW");
 cars.push("Ford");
 cars.push("Mazda");
+```
+
 The queue will look like this:
 
 Volvo (front (first) element)
@@ -44,16 +62,22 @@ You cannot access queue elements by referring to index numbers, like you would w
 
 In a queue, you can only access the element at the front or the back, using .front() and .back() respectively:
 
-Example
+## Example 2
+
+```cpp
 // Access the front element (first and oldest)
-cout << cars.front();  // Outputs "Volvo"
+cout << cars.front(); // Outputs "Volvo"
 
 // Access the back element (last and newest)
-cout << cars.back();  // Outputs "Mazda"
+cout << cars.back(); // Outputs "Mazda"
+```
+
 Change Front and Back Elements
 You can also use .front and .back to change the value of the front and back elements:
 
-Example
+## Example 3
+
+```cpp
 // Change the value of the front element
 cars.front() = "Tesla";
 
@@ -61,16 +85,20 @@ cars.front() = "Tesla";
 cars.back() = "VW";
 
 // Access the front element
-cout << cars.front();  // Now outputs "Tesla" instead of "Volvo"
+cout << cars.front(); // Now outputs "Tesla" instead of "Volvo"
 
 // Access the back element
-cout << cars.back();  // Now outputs "VW" instead of "Mazda"
+cout << cars.back(); // Now outputs "VW" instead of "Mazda"
+```
+
 Remove Elements
 You can use the .pop() function to remove an element from the queue.
 
 This will remove the front element (the first and oldest element that was added to the queue):
 
-Example
+## Example 4
+
+```cpp
 // Create a queue of strings
 queue<string> cars;
 
@@ -85,20 +113,32 @@ cars.pop();
 
 // Access the front element (Now BMW)
 cout << cars.front();
+```
+
 Get the Size of a Queue
 To find out how many elements there are in a queue, use the .size() function:
 
-Example
+## Example 5
+
+```cpp
 cout << cars.size();
+```
+
 Check if the Queue is Empty
 Use the .empty() function to find out if the queue is empty or not.
 
 The .empty() function returns 1 (true) if the queue is empty and 0 (false) otherwise:
 
-Example
+## Example 6
+
+```cpp
 queue<string> cars;
 cout << cars.empty(); // Outputs 1 (The queue is empty)
-Example
+```
+
+## Example 7
+
+```cpp
 queue<string> cars;
 
 cars.push("Volvo");
@@ -106,7 +146,8 @@ cars.push("BMW");
 cars.push("Ford");
 cars.push("Mazda");
 
-cout << cars.empty();  // Outputs 0 (not empty)
+cout << cars.empty(); // Outputs 0 (not empty)
+```
+
 Stacks and Queues
 Queues are often mentioned together with Stacks, which is a similar data structure described in the previous page.
-

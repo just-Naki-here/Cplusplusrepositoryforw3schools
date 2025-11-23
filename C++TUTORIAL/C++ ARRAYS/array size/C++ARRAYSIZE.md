@@ -1,9 +1,24 @@
-Get the Size of an Array
+# Get the Size of an Array
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Example 1](#example-1)
+- [Example 2](#example-2)
+- [Example 3](#example-3)
+- [Example 4](#example-4)
+
+## Overview
+
 To get the size of an array, you can use the sizeof() operator:
 
-Example
+## Example 1
+
+```cpp
 int myNumbers[5] = {10, 20, 30, 40, 50};
 cout << sizeof(myNumbers);
+```
+
 Result:
 
 20
@@ -15,10 +30,14 @@ You learned from the Data Types chapter that an int type is usually 4 bytes, so 
 
 To find out how many elements an array has, you have to divide the size of the array by the size of the first element in the array:
 
-Example
+## Example 2
+
+```cpp
 int myNumbers[5] = {10, 20, 30, 40, 50};
 int getArrayLength = sizeof(myNumbers) / sizeof(myNumbers[0]);
 cout << getArrayLength;
+```
+
 Result:
 
 5
@@ -31,20 +50,28 @@ Instead of writing:
 
 int myNumbers[5] = {10, 20, 30, 40, 50};
 for (int i = 0; i < 5; i++) {
-  cout << myNumbers[i] << "\n";
+cout << myNumbers[i] << "\n";
 }
 It is better to write:
 
-Example
+## Example 3
+
+```cpp
 int myNumbers[5] = {10, 20, 30, 40, 50};
 for (int i = 0; i < sizeof(myNumbers) / sizeof(myNumbers[0]); i++) {
-  cout << myNumbers[i] << "\n";
+cout << myNumbers[i] << "\n";
 }
+```
+
 Note that, in C++ version 11 (2011), you can also use the "for-each" loop, which is even cleaner and simpler:
 
-Example
+## Example 4
+
+```cpp
 int myNumbers[5] = {10, 20, 30, 40, 50};
 for (int i : myNumbers) {
-  cout << i << "\n";
+cout << i << "\n";
 }
+```
+
 It is good to know the different ways to loop through an array, since you may encounter them all in different programs.

@@ -1,4 +1,11 @@
-C++ Get Started
+# C++ Get Started
+
+## Table of Contents
+
+- [Overview](#overview)
+
+## Overview
+
 To start using C++, you need two things:
 
 A text editor, like Notepad, to write C++ code
@@ -25,8 +32,6 @@ Write the following C++ code and save the file as myfirstprogram.cpp (File > Sav
 
 myfirstprogram.cpp
 
-
-
 view file codeblocks2020.png
 Then, go to Build > Build and Run to run (execute) the program. The result will look something to this:
 
@@ -45,8 +50,8 @@ Code:
 using namespace std;
 
 int main() {
-  cout << "Hello World!";
-  return 0;
+cout << "Hello World!";
+return 0;
 }
 Result:
 
