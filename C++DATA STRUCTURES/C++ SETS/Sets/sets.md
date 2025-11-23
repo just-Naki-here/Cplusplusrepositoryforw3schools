@@ -23,7 +23,7 @@ set<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
 
 // Print set elements
 for (string car : cars) {
-  cout << car << "\n";
+cout << car << "\n";
 }
 The output will be:
 
@@ -41,7 +41,7 @@ set<int> numbers = {1, 7, 3, 2, 5, 9};
 
 // Print set elements
 for (int num : numbers) {
-  cout << num << "\n";
+cout << num << "\n";
 }
 The output will be:
 
@@ -61,7 +61,7 @@ Example
 set<int, greater<int>> numbers = {1, 7, 3, 2, 5, 9};
 // Print the elements
 for (int num : numbers) {
-  cout << num << "\n";
+cout << num << "\n";
 }
 The output will be:
 
@@ -83,7 +83,7 @@ set<string> cars = {"Volvo", "BMW", "Ford", "BMW", "Mazda"};
 
 // Print set elements
 for (string car : cars) {
-  cout << car << "\n";
+cout << car << "\n";
 }
 The output will be:
 
@@ -123,7 +123,7 @@ To find out how many elements a set has, use the .size() function:
 
 Example
 set<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
-cout << cars.size();  // Outputs 4
+cout << cars.size(); // Outputs 4
 Check if a Set is Empty
 Use the .empty() function to find out if a set is empty or not.
 
@@ -131,10 +131,10 @@ The .empty() function returns 1 (true) if the set is empty and 0 (false) otherwi
 
 Example
 set<string> cars;
-cout << cars.empty();  // Outputs 1 (The set is empty)
+cout << cars.empty(); // Outputs 1 (The set is empty)
 Example
 set<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
-cout << cars.empty();  // Outputs 0 (not empty)
+cout << cars.empty(); // Outputs 0 (not empty)
 Loop Through a Set
 You can loop through a set with the for-each loop:
 
@@ -142,7 +142,6 @@ Example
 set<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
 
 for (string car : cars) {
-  cout << car << "\n";
+cout << car << "\n";
 }
 Tip: It is also possible to loop through sets with an iterator, which you will learn more about in a later chapter.
-

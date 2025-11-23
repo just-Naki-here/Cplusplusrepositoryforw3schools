@@ -12,8 +12,8 @@ A boolean variable is declared with the bool keyword and can take the values tru
 Example
 bool isCodingFun = true;
 bool isFishTasty = false;
-cout << isCodingFun;  // Outputs 1 (true)
-cout << isFishTasty;  // Outputs 0 (false)
+cout << isCodingFun; // Outputs 1 (true)
+cout << isFishTasty; // Outputs 0 (false)
 From the example above, you can read that a true value returns 1, and false returns 0.
 
 However, it is more common to return a boolean value by comparing values and variables (see next page).

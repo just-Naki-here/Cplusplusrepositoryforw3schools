@@ -3,7 +3,7 @@ When you know exactly how many times you want to loop through a block of code, u
 
 Syntax
 for (statement 1; statement 2; statement 3) {
-  // code block to be executed
+// code block to be executed
 }
 Statement 1 is executed (one time) before the execution of the code block.
 
@@ -15,7 +15,7 @@ The example below will print the numbers 0 to 4:
 
 Example
 for (int i = 0; i < 5; i++) {
-  cout << i << "\n";
+cout << i << "\n";
 }
 Example explained
 Statement 1 sets a variable before the loop starts (int i = 0).
@@ -29,5 +29,5 @@ This example will only print even values between 0 and 10:
 
 Example
 for (int i = 0; i <= 10; i = i + 2) {
-  cout << i << "\n";
+cout << i << "\n";
 }

@@ -5,7 +5,7 @@ Example
 // Create variables of different data types
 int items = 50;
 double cost_per_item = 9.99;
-double total_cost = items * cost_per_item;
+double total_cost = items \* cost_per_item;
 char currency = '$';
 
 // Print variables

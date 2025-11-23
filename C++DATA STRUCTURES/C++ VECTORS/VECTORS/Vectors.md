@@ -23,7 +23,7 @@ vector<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
 
 // Print vector elements
 for (string car : cars) {
-  cout << car << "\n";
+cout << car << "\n";
 }
 Note: The type of the vector (string in our example) cannot be changed after its been declared.
 
@@ -37,10 +37,10 @@ Example
 vector<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
 
 // Get the first element
-cout << cars[0];  // Outputs Volvo
+cout << cars[0]; // Outputs Volvo
 
 // Get the second element
-cout << cars[1];  // Outputs BMW
+cout << cars[1]; // Outputs BMW
 One advantage of using the vector library, is that it includes many useful functions. For example, you can access the first or the last element of a vector with the .front() and .back() functions:
 
 Example
@@ -82,7 +82,7 @@ vector<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
 // Change the value of the first element
 cars[0] = "Opel";
 
-cout << cars[0];  // Now outputs Opel instead of Volvo
+cout << cars[0]; // Now outputs Opel instead of Volvo
 However, it is safer to use the .at() function:
 
 Example
@@ -91,7 +91,7 @@ vector<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
 // Change the value of the first element
 cars.at(0) = "Opel";
 
-cout << cars.at(0);  // Now outputs Opel instead of Volvo
+cout << cars.at(0); // Now outputs Opel instead of Volvo
 Add Vector Elements
 The biggest difference between a vector and an array is that vectors can grow dynamically. That means you can add or remove elements from the vector.
 
@@ -121,7 +121,7 @@ To find out how many elements a vector has, use the .size() function:
 
 Example
 vector<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
-cout << cars.size();  // Outputs 4
+cout << cars.size(); // Outputs 4
 Check if a Vector is Empty
 There is also a function to find out whether a vector is empty or not.
 
@@ -129,10 +129,10 @@ The .empty() function returns 1 (true) if the vector is empty and 0 (false) if i
 
 Example
 vector<string> cars;
-cout << cars.empty();  // Outputs 1 (The vector is empty)
+cout << cars.empty(); // Outputs 1 (The vector is empty)
 Example
 vector<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
-cout << cars.empty();  // Outputs 0 (not empty)
+cout << cars.empty(); // Outputs 0 (not empty)
 Loop Through a Vector
 You can loop through the vector elements by using a for loop combined with the .size() function:
 
@@ -140,7 +140,7 @@ Example
 vector<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
 
 for (int i = 0; i < cars.size(); i++) {
-  cout << cars[i] << "\n";
+cout << cars[i] << "\n";
 }
 You can also use a for-each loop (introduced in C++ version 11 (2011), which is cleaner and more readable:
 
@@ -148,6 +148,6 @@ Example
 vector<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
 
 for (string car : cars) {
-  cout << car << "\n";
+cout << car << "\n";
 }
 Tip: It is also possible to loop through vectors with an iterator, which you will learn more about in a later chapter.

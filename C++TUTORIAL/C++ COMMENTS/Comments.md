@@ -16,13 +16,13 @@ This example uses a single-line comment at the end of a line of code:
 Example
 cout << "Hello World!"; // This is a comment
 C++ Multi-line Comments
-Multi-line comments start with /* and ends with */.
+Multi-line comments start with /_ and ends with _/.
 
-Any text between /* and */ will be ignored by the compiler:
+Any text between /_ and _/ will be ignored by the compiler:
 
 Example
-/* The code below will print the words Hello World!
-to the screen, and it is amazing */
+/_ The code below will print the words Hello World!
+to the screen, and it is amazing _/
 cout << "Hello World!";
 Single or multi-line comments?
-It is up to you which you want to use. Normally, we use // for short comments, and /* */ for longer.
+It is up to you which you want to use. Normally, we use // for short comments, and /\* \*/ for longer.

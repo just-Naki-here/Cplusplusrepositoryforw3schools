@@ -7,9 +7,9 @@ Example
 // using namespace std; - Remove this line
 
 int main() {
-  std::string greeting = "Hello";
-  std::cout << greeting;
-  return 0;
+std::string greeting = "Hello";
+std::cout << greeting;
+return 0;
 }
 
 It is up to you if you want to include the standard namespace library or not.

@@ -21,7 +21,7 @@ deque<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
 
 // Print deque elements
 for (string car : cars) {
-  cout << car << "\n";
+cout << car << "\n";
 }
 Note: The type of the deque (string in our example) cannot be changed after its been declared.
 
@@ -35,10 +35,10 @@ Example
 deque<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
 
 // Get the first element
-cout << cars[0];  // Outputs Volvo
+cout << cars[0]; // Outputs Volvo
 
 // Get the second element
-cout << cars[1];  // Outputs BMW
+cout << cars[1]; // Outputs BMW
 You can also access the first or the last element of a deque with the .front() and .back() functions:
 
 Example
@@ -78,7 +78,7 @@ deque<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
 // Change the value of the first element
 cars[0] = "Opel";
 
-cout << cars[0];  // Now outputs Opel instead of Volvo
+cout << cars[0]; // Now outputs Opel instead of Volvo
 However, it is safer to use the .at() function:
 
 Example
@@ -87,7 +87,7 @@ deque<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
 // Change the value of the first element
 cars.at(0) = "Opel";
 
-cout << cars.at(0);  // Now outputs Opel instead of Volvo
+cout << cars.at(0); // Now outputs Opel instead of Volvo
 Add Deque Elements
 To add elements to a deque, you can use .push_front() to insert an element at the beginning of the deque and .push_back() to add an element at the end:
 
@@ -115,7 +115,7 @@ To find out how many elements a deque has, use the .size() function:
 
 Example
 deque<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
-cout << cars.size();  // Outputs 4
+cout << cars.size(); // Outputs 4
 Check if a Deque is Empty
 Use the .empty() function to find out if a deque is empty or not.
 
@@ -123,10 +123,10 @@ The .empty() function returns 1 (true) if the deque is empty and 0 (false) other
 
 Example
 deque<string> cars;
-cout << cars.empty();  // Outputs 1 (The deque is empty)
+cout << cars.empty(); // Outputs 1 (The deque is empty)
 Example
 deque<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
-cout << cars.empty();  // Outputs 0 (not empty)
+cout << cars.empty(); // Outputs 0 (not empty)
 Loop Through a Deque
 You can loop through the deque elements by using a for loop combined with the .size() function:
 
@@ -134,7 +134,7 @@ Example
 deque<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
 
 for (int i = 0; i < cars.size(); i++) {
-  cout << cars[i] << "\n";
+cout << cars[i] << "\n";
 }
 You can also use a for-each loop (introduced in C++ version 11 (2011), which is cleaner and more readable:
 
@@ -142,6 +142,6 @@ Example
 deque<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
 
 for (string car : cars) {
-  cout << car << "\n";
+cout << car << "\n";
 }
 Tip: It is also possible to loop through deques with an iterator, which you will learn more about in a later chapter.

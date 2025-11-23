@@ -8,17 +8,17 @@ Adding two numbers together is easy to do, but adding a range of numbers is more
 
 Example
 int sum(int k) {
-  if (k > 0) {
-    return k + sum(k - 1);
-  } else {
-    return 0;
-  }
+if (k > 0) {
+return k + sum(k - 1);
+} else {
+return 0;
+}
 }
 
 int main() {
-  int result = sum(10);
-  cout << result;
-  return 0;
+int result = sum(10);
+cout << result;
+return 0;
 }
 Example Explained
 When the sum() function is called, it adds parameter k to the sum of all numbers smaller than k and returns the result. When k becomes 0, the function just returns 0. When running, the program follows these steps:

@@ -31,20 +31,20 @@ Instead of writing:
 
 int myNumbers[5] = {10, 20, 30, 40, 50};
 for (int i = 0; i < 5; i++) {
-  cout << myNumbers[i] << "\n";
+cout << myNumbers[i] << "\n";
 }
 It is better to write:
 
 Example
 int myNumbers[5] = {10, 20, 30, 40, 50};
 for (int i = 0; i < sizeof(myNumbers) / sizeof(myNumbers[0]); i++) {
-  cout << myNumbers[i] << "\n";
+cout << myNumbers[i] << "\n";
 }
 Note that, in C++ version 11 (2011), you can also use the "for-each" loop, which is even cleaner and simpler:
 
 Example
 int myNumbers[5] = {10, 20, 30, 40, 50};
 for (int i : myNumbers) {
-  cout << i << "\n";
+cout << i << "\n";
 }
 It is good to know the different ways to loop through an array, since you may encounter them all in different programs.

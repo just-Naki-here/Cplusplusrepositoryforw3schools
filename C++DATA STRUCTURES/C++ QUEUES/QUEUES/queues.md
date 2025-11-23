@@ -46,10 +46,10 @@ In a queue, you can only access the element at the front or the back, using .fro
 
 Example
 // Access the front element (first and oldest)
-cout << cars.front();  // Outputs "Volvo"
+cout << cars.front(); // Outputs "Volvo"
 
 // Access the back element (last and newest)
-cout << cars.back();  // Outputs "Mazda"
+cout << cars.back(); // Outputs "Mazda"
 Change Front and Back Elements
 You can also use .front and .back to change the value of the front and back elements:
 
@@ -61,10 +61,10 @@ cars.front() = "Tesla";
 cars.back() = "VW";
 
 // Access the front element
-cout << cars.front();  // Now outputs "Tesla" instead of "Volvo"
+cout << cars.front(); // Now outputs "Tesla" instead of "Volvo"
 
 // Access the back element
-cout << cars.back();  // Now outputs "VW" instead of "Mazda"
+cout << cars.back(); // Now outputs "VW" instead of "Mazda"
 Remove Elements
 You can use the .pop() function to remove an element from the queue.
 
@@ -106,7 +106,6 @@ cars.push("BMW");
 cars.push("Ford");
 cars.push("Mazda");
 
-cout << cars.empty();  // Outputs 0 (not empty)
+cout << cars.empty(); // Outputs 0 (not empty)
 Stacks and Queues
 Queues are often mentioned together with Stacks, which is a similar data structure described in the previous page.
-

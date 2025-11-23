@@ -11,11 +11,13 @@ int y = 3;
 cout << (x > y); // returns 1 (true) because 5 is greater than 3
 A list of all comparison operators:
 
-Operator                	Name	                     Example
-==	                        Equal to                    	x == y	
-!=	                        Not equal	                    x != y	
->	                        Greater than                 	x > y	
-<	                        Less than	                    x < y	
->=	                        Greater than or equal to	    x >= y	
-<=	                        Less than or equal to	        x <= y
-You will learn much more about comparison operators and how to use them in a later chapter.
+Operator Name Example
+== Equal to x == y
+!= Not equal x != y
+
+>                             Greater than                 	x > y
+>
+> < Less than x < y
+> = Greater than or equal to x >= y
+> <= Less than or equal to x <= y
+> You will learn much more about comparison operators and how to use them in a later chapter.

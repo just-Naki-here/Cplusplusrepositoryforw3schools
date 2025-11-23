@@ -44,7 +44,7 @@ In a stack, you can only access the top element, which is done using the .top() 
 
 Example
 // Access the top element
-cout << cars.top();  // Outputs "Mazda"
+cout << cars.top(); // Outputs "Mazda"
 Change the Top Element
 You can also use the .top function to change the value of the top element:
 
@@ -52,8 +52,8 @@ Example
 // Change the value of the top element
 cars.top() = "Tesla";
 
- // Access the top element
-cout << cars.top();  // Now outputs "Tesla" instead of "Mazda"
+// Access the top element
+cout << cars.top(); // Now outputs "Tesla" instead of "Mazda"
 Remove Elements
 You can use the .pop() function to remove an element from the stack.
 
@@ -95,7 +95,6 @@ cars.push("BMW");
 cars.push("Ford");
 cars.push("Mazda");
 
-cout << cars.empty();  // Outputs 0 (not empty)
+cout << cars.empty(); // Outputs 0 (not empty)
 Stacks and Queues
 Stacks are often mentioned together with Queues, which is a similar data structure described on the next page.
-

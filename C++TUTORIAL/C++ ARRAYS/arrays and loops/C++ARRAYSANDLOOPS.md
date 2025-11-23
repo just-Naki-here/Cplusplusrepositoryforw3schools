@@ -9,28 +9,28 @@ string cars[5] = {"Volvo", "BMW", "Ford", "Mazda", "Tesla"};
 
 // Loop through strings
 for (int i = 0; i < 5; i++) {
-  cout << cars[i] << "\n";
+cout << cars[i] << "\n";
 }
 This example outputs the index of each element together with its value:
 
 Example
 string cars[5] = {"Volvo", "BMW", "Ford", "Mazda", "Tesla"};
 for (int i = 0; i < 5; i++) {
-  cout << i << " = " << cars[i] << "\n";
+cout << i << " = " << cars[i] << "\n";
 }
 And this example shows how to loop through an array of integers:
 
 Example
 int myNumbers[5] = {10, 20, 30, 40, 50};
 for (int i = 0; i < 5; i++) {
-  cout << myNumbers[i] << "\n";
+cout << myNumbers[i] << "\n";
 }
 The foreach Loop
 There is also a "for-each loop" (introduced in C++ version 11 (2011)), which is used exclusively to loop through elements in an array (and other data structures, like vectors and lists):
 
 Syntax
 for (type variableName : arrayName) {
-  // code block to be executed
+// code block to be executed
 }
 The following examples output all elements in an array using a "for-each loop":
 
@@ -42,7 +42,7 @@ int myNumbers[5] = {10, 20, 30, 40, 50};
 
 // Loop through integers
 for (int i : myNumbers) {
-  cout << i << "\n";
+cout << i << "\n";
 }
 Example
 Loop through strings:
@@ -52,5 +52,5 @@ string cars[5] = {"Volvo", "BMW", "Ford", "Mazda", "Tesla"};
 
 // Loop through strings
 for (string car : cars) {
-  cout << car << "\n";
+cout << car << "\n";
 }

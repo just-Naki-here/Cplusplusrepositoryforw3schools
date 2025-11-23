@@ -13,7 +13,7 @@ int length = sizeof(ages) / sizeof(ages[0]);
 
 // Loop through the elements of the array
 for (int age : ages) {
-  sum += age;
+sum += age;
 }
 
 // Calculate the average by dividing the sum by the length
@@ -37,9 +37,9 @@ int lowestAge = ages[0];
 
 // Loop through the elements of the ages array to find the lowest age
 for (int age : ages) {
-  if (lowestAge > age) {
-    lowestAge = age;
-  }
+if (lowestAge > age) {
+lowestAge = age;
+}
 }
 
 // Print the lowest age

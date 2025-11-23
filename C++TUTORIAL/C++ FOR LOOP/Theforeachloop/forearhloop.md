@@ -3,14 +3,14 @@ There is also a "for-each loop" (also known as ranged-based for loop), which is 
 
 Syntax
 for (type variableName : arrayName) {
-  // code block to be executed
+// code block to be executed
 }
 The following example outputs all elements in an array, using a "for-each loop":
 
 Example
 int myNumbers[5] = {10, 20, 30, 40, 50};
 for (int i : myNumbers) {
-  cout << i << "\n";
+cout << i << "\n";
 }
 Note: Don't worry if you don't understand the example above. You will learn more about arrays in the C++ Arrays chapter.
 

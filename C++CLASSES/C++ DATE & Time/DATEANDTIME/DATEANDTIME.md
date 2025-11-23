@@ -102,7 +102,7 @@ Example
 Get a datetime structure and output the current hour:
 
 time_t timestamp = time(&timestamp);
-struct tm datetime = *localtime(&timestamp);
+struct tm datetime = \*localtime(&timestamp);
 
 cout << datetime.tm_hour;
 Display Dates
@@ -112,7 +112,7 @@ Example
 Display the date represented by a datetime structure:
 
 time_t timestamp = time(NULL);
-struct tm datetime = *localtime(&timestamp);
+struct tm datetime = \*localtime(&timestamp);
 
 cout << asctime(&datetime);
 Note: The asctime() function does not correct invalid dates. For example, if you set the day of the month to 32 it will display 32. The mktime() function can correct these kinds of errors:
@@ -138,7 +138,7 @@ Example
 Represent the current date in different ways:
 
 time_t timestamp = time(NULL);
-struct tm datetime = *localtime(&timestamp);
+struct tm datetime = \*localtime(&timestamp);
 
 char output[50];
 
@@ -161,19 +161,19 @@ The third parameter allows us to choose how the date is formatted using format s
 The last parameter is a pointer to the datetime structure which contains the date we want to display.
 The following table has some useful format specifiers. For a more complete list, look at the strftime() reference page.
 
-Format Specifier	Description                             	Example
-%a	                Short representation of the weekday     	Fri
-%b	                Short representation of the month name	    Dec
-%B	                Full representation of the month name	    December
-%d	                Day of the month with leading zero	        09
-%e              	Day of the month with leading spaces	    9
-%H	                24-hour format of an hour	                14
-%I              	12-hour format of an hour	                02
-%M	                Minutes within an hour	                    30
-%p                  AM or PM	                                PM
-%S	                Seconds within a minute	                    01
-%y	                2-digit year representation             	23
-%Y	                4-digit year representation	                2023
+Format Specifier Description Example
+%a Short representation of the weekday Fri
+%b Short representation of the month name Dec
+%B Full representation of the month name December
+%d Day of the month with leading zero 09
+%e Day of the month with leading spaces 9
+%H 24-hour format of an hour 14
+%I 12-hour format of an hour 02
+%M Minutes within an hour 30
+%p AM or PM PM
+%S Seconds within a minute 01
+%y 2-digit year representation 23
+%Y 4-digit year representation 2023
 Measuring Time
 There are two different functions that can be used to measure differences in time.
 
@@ -187,7 +187,7 @@ time_t nextyear;
 struct tm datetime;
 
 now = time(NULL);
-datetime = *localtime(&now);
+datetime = \*localtime(&now);
 datetime.tm_year = datetime.tm_year + 1;
 datetime.tm_mon = 0;
 datetime.tm_mday = 1;
@@ -208,7 +208,7 @@ Measure how long it takes for the program to run:
 clock_t before = clock();
 int k = 0;
 for(int i = 0; i < 100000; i++) {
-  k += i;
+k += i;
 }
 clock_t duration = clock() - before;
 cout << "Duration: " << (float)duration / CLOCKS_PER_SEC << " seconds";

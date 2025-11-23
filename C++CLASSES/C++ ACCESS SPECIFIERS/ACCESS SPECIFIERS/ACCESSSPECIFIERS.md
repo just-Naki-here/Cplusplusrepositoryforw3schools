@@ -6,9 +6,9 @@ Example
 
 class MyClass { // The class
 
- public: // Access specifier
+public: // Access specifier
 
- // class members goes here
+// class members goes here
 
 };
 
@@ -30,25 +30,25 @@ Example
 
 class MyClass {
 
- public: // Public access specifier
+public: // Public access specifier
 
- int x; // Public attribute
+int x; // Public attribute
 
- private: // Private access specifier
+private: // Private access specifier
 
- int y; // Private attribute
+int y; // Private attribute
 
 };
 
 int main() {
 
- MyClass myObj;
+MyClass myObj;
 
- myObj.x = 25; // Allowed (public)
+myObj.x = 25; // Allowed (public)
 
- myObj.y = 50; // Not allowed (private)
+myObj.y = 50; // Not allowed (private)
 
- return 0;
+return 0;
 
 }
 
@@ -66,8 +66,8 @@ Example
 
 class MyClass {
 
- int x; // Private attribute
+int x; // Private attribute
 
- int y; // Private attribute
+int y; // Private attribute
 
 };

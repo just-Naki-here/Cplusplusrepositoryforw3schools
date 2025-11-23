@@ -22,7 +22,7 @@ Note: The example above only works when you have specified the size of the array
 If you don't specify the array size, an error occurs:
 
 Example
-string cars[];  // Array size is not specified
+string cars[]; // Array size is not specified
 cars[0] = "Volvo";
 cars[1] = "BMW";
 cars[2] = "Ford";

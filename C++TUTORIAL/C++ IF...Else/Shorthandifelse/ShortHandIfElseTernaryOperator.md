@@ -9,9 +9,9 @@ Instead of writing:
 Example
 int time = 20;
 if (time < 18) {
-  cout << "Good day.";
+cout << "Good day.";
 } else {
-  cout << "Good evening.";
+cout << "Good evening.";
 }
 You can simply write:
 

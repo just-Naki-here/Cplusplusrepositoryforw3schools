@@ -18,9 +18,9 @@ int myAge = 25;
 int votingAge = 18;
 
 if (myAge >= votingAge) {
-  cout << "Old enough to vote!";
+cout << "Old enough to vote!";
 } else {
-  cout << "Not old enough to vote.";
+cout << "Not old enough to vote.";
 }
 
 // Outputs: Old enough to vote!

@@ -3,7 +3,7 @@ The do/while loop is a variant of the while loop. This loop will execute the cod
 
 Syntax
 do {
-  // code block to be executed
+// code block to be executed
 }
 while (condition);
 The example below uses a do/while loop. The loop will always be executed at least once, even if the condition is false, because the code block is executed before the condition is tested:
@@ -11,8 +11,8 @@ The example below uses a do/while loop. The loop will always be executed at leas
 Example
 int i = 0;
 do {
-  cout << i << "\n";
-  i++;
+cout << i << "\n";
+i++;
 }
 while (i < 5);
 Do not forget to increase the variable used in the condition, otherwise the loop will never end!
