@@ -35,11 +35,11 @@ Example
 string myString = "Hello";
 cout << myString; // Outputs Hello
 
-cout << myString.at(0);  // First character
-cout << myString.at(1);  // Second character
-cout << myString.at(myString.length() - 1);  // Last character
+cout << myString.at(0); // First character
+cout << myString.at(1); // Second character
+cout << myString.at(myString.length() - 1); // Last character
 
 myString.at(0) = 'J';
-cout << myString;  // Outputs Jello
+cout << myString; // Outputs Jello
 
 Tip: A list of other useful string functions, can be found in the c++ reference folder

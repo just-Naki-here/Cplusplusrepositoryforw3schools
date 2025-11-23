@@ -6,10 +6,10 @@ In the following example, MyGrandChild is derived from class MyChild (which is d
 Example
 // Base class (parent)
 class MyClass {
-  public:
-    void myFunction() {
-      cout << "Some content in parent class." ;
-    }
+public:
+void myFunction() {
+cout << "Some content in parent class." ;
+}
 };
 
 // Derived class (child)
@@ -21,7 +21,7 @@ class MyGrandChild: public MyChild {
 };
 
 int main() {
-  MyGrandChild myObj;
-  myObj.myFunction();
-  return 0;
+MyGrandChild myObj;
+myObj.myFunction();
+return 0;
 }

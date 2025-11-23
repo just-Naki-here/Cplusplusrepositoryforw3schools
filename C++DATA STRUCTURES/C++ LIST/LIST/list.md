@@ -24,7 +24,7 @@ list<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
 
 // Print list elements
 for (string car : cars) {
-  cout << car << "\n";
+cout << car << "\n";
 }
 Note: The type of the list (string in our example) cannot be changed after its been declared.
 
@@ -38,10 +38,10 @@ Example
 list<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
 
 // Get the first element
-cout << cars.front();  // Outputs Volvo
+cout << cars.front(); // Outputs Volvo
 
 // Get the last element
-cout << cars.back();  // Outputs Mazda
+cout << cars.back(); // Outputs Mazda
 Change a List Element
 You can also change the value of the first or the last element with the .front() and .back() functions
 
@@ -55,7 +55,7 @@ cars.front() = "Opel";
 cars.back() = "Toyota";
 
 cout << cars.front(); // Now outputs Opel instead of Volvo
-cout << cars.back();  // Now outputs Toyota instead of Mazda
+cout << cars.back(); // Now outputs Toyota instead of Mazda
 Add List Elements
 To add elements to a list, you can use .push_front() to insert an element at the beginning of the list and .push_back() to add an element at the end:
 
@@ -83,7 +83,7 @@ To find out how many elements a list has, use the .size() function:
 
 Example
 list<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
-cout << cars.size();  // Outputs 4
+cout << cars.size(); // Outputs 4
 Check if a List is Empty
 Use the .empty() function to find out if a list is empty or not.
 
@@ -91,10 +91,10 @@ The .empty() function returns 1 (true) if the list is empty and 0 (false) otherw
 
 Example
 list<string> cars;
-cout << cars.empty();  // Outputs 1 (The list is empty)
+cout << cars.empty(); // Outputs 1 (The list is empty)
 Example
 list<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
-cout << cars.empty();  // Outputs 0 (not empty)
+cout << cars.empty(); // Outputs 0 (not empty)
 Loop Through a List
 You cannot loop through the list elements with a traditional for loop combined with the .size() function, since it is not possible to access elements in a list by index:
 
@@ -102,7 +102,7 @@ Example
 list<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
 
 for (int i = 0; i < cars.size(); i++) {
-  cout << cars[i] << "\n";
+cout << cars[i] << "\n";
 }
 The simplest way to loop through a list is with the for-each loop:
 
@@ -110,6 +110,6 @@ Example
 list<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
 
 for (string car : cars) {
-  cout << car << "\n";
+cout << car << "\n";
 }
 Tip: It is also possible to loop through lists with an iterator, which you will learn more about in a later chapter.

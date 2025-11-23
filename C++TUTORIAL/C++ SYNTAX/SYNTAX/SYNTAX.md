@@ -6,11 +6,11 @@ Example
 using namespace std;
 
 int main() {
-  cout << "Hello World!";
-  return 0;
+cout << "Hello World!";
+return 0;
 }
 
----------------------
+---
 
 Example explained
 Line 1: #include <iostream> is a header file library that lets us work with input and output objects, such as cout (used in line 5). Header files add functionality to C++ programs.
@@ -36,7 +36,7 @@ Line 6: return 0; ends the main function.
 
 Line 7: Do not forget to add the closing curly bracket } to actually end the main function.
 
-------------------------------------------
+---
 
 Omitting Namespace
 You might see some C++ programs that runs without the standard namespace library. The using namespace std line can be omitted and replaced with the std keyword, followed by the :: operator for some objects:
@@ -45,7 +45,7 @@ Example
 #include <iostream>
 
 int main() {
-  std::cout << "Hello World!";
-  return 0;
+std::cout << "Hello World!";
+return 0;
 }
 It is up to you if you want to include the standard namespace library or not.

@@ -3,23 +3,23 @@ In the examples from the previous page, we used normal variables when we passed 
 
 Example
 void swapNums(int &x, int &y) {
-  int z = x;
-  x = y;
-  y = z;
+int z = x;
+x = y;
+y = z;
 }
 
 int main() {
-  int firstNum = 10;
-  int secondNum = 20;
+int firstNum = 10;
+int secondNum = 20;
 
-  cout << "Before swap: " << "\n";
-  cout << firstNum << secondNum << "\n";
+cout << "Before swap: " << "\n";
+cout << firstNum << secondNum << "\n";
 
-  // Call the function, which will change the values of firstNum and secondNum
-  swapNums(firstNum, secondNum);
+// Call the function, which will change the values of firstNum and secondNum
+swapNums(firstNum, secondNum);
 
-  cout << "After swap: " << "\n";
-  cout << firstNum << secondNum << "\n";
+cout << "After swap: " << "\n";
+cout << firstNum << secondNum << "\n";
 
-  return 0;
+return 0;
 }

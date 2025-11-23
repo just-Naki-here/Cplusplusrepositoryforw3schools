@@ -5,20 +5,20 @@ Parameters are specified after the function name, inside the parentheses. You ca
 
 Syntax
 void functionName(parameter1, parameter2, parameter3) {
-  // code to be executed
+// code to be executed
 }
 The following example has a function that takes a string called fname as parameter. When the function is called, we pass along a first name, which is used inside the function to print the full name:
 
 Example
 void myFunction(string fname) {
-  cout << fname << " Refsnes\n";
+cout << fname << " Refsnes\n";
 }
 
 int main() {
-  myFunction("Liam");
-  myFunction("Jenny");
-  myFunction("Anja");
-  return 0;
+myFunction("Liam");
+myFunction("Jenny");
+myFunction("Anja");
+return 0;
 }
 
 // Liam Refsnes

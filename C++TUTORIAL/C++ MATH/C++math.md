@@ -12,7 +12,6 @@ And the min(x,y) function can be used to find the lowest value of x and y:
 Example
 cout << min(5, 10);
 
-
 C++ <cmath> Library
 Other functions, such as sqrt (square root), round (rounds a number) and log (natural logarithm), can be found in the <cmath> header file:
 

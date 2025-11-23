@@ -2,7 +2,7 @@ C++ ctime Functions<br>
 The <ctime> library has a variety of functions that allow you to measure dates and times.<br>
 
 | Function    | Description                                                                                                   |
-|-------------|---------------------------------------------------------------------------------------------------------------|
+| ----------- | ------------------------------------------------------------------------------------------------------------- |
 | asctime()   | Returns a C-style string representation of the time in a tm structure                                         |
 | clock()     | Returns a number representing the amount of time that has passed while the program is running                 |
 | ctime()     | Returns a C-style string representation of the time in a timestamp                                            |

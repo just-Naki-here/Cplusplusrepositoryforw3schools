@@ -40,7 +40,7 @@ Example
 // Create a map that will store the name and age of different people
 map<string, int> people = { {"John", 32}, {"Adele", 45}, {"Bo", 29} };
 
- // Get the value associated with the key "Adele"
+// Get the value associated with the key "Adele"
 cout << "Adele is: " << people.at("Adele") << "\n";
 
 // Get the value associated with the key "Bo"
@@ -62,7 +62,7 @@ map<string, int> people = { {"John", 32}, {"Adele", 45}, {"Bo", 29} };
 // Change John's value to 50 instead of 32
 people["John"] = 50;
 
-cout << "John is: " << people["John"];  // Now outputs John is: 50
+cout << "John is: " << people["John"]; // Now outputs John is: 50
 However, it is safer to use the .at() function:
 
 Example
@@ -71,7 +71,7 @@ map<string, int> people = { {"John", 32}, {"Adele", 45}, {"Bo", 29} };
 // Change John's value to 50 instead of 32
 people.at("John") = 50;
 
-cout << "John is: " << people.at("John");  // Now outputs John is: 50
+cout << "John is: " << people.at("John"); // Now outputs John is: 50
 Add Elements
 To add elements to a map, it is ok to use square brackets []:
 
@@ -126,7 +126,7 @@ To find out how many elements a map has, use the .size() function:
 
 Example
 map<string, int> people = { {"John", 32}, {"Adele", 45}, {"Bo", 29} };
-cout << people.size();  // Outputs 3
+cout << people.size(); // Outputs 3
 Check if a Map is Empty
 Use the .empty() function to find out if a map is empty or not.
 
@@ -137,14 +137,14 @@ map<string, int> people;
 cout << people.empty(); // Outputs 1 (The map is empty)
 Example
 map<string, int> people = { {"John", 32}, {"Adele", 45}, {"Bo", 29} };
-cout << people.empty();  // Outputs 0 (not empty)
+cout << people.empty(); // Outputs 0 (not empty)
 Note: You can also check if a specific element exists, by using the .count(key) function.
 
 It returns 1 (true) if the element exists and 0 (false) otherwise:
 
 Example
 map<string, int> people = { {"John", 32}, {"Adele", 45}, {"Bo", 29} };
-cout << people.count("John");  // Outputs 1 (John exists)
+cout << people.count("John"); // Outputs 1 (John exists)
 Loop Through a Map
 You can loop through a map with the for-each loop. However, there are a couple of things to be aware of:
 
@@ -155,7 +155,7 @@ Example
 map<string, int> people = { {"John", 32}, {"Adele", 45}, {"Bo", 29} };
 
 for (auto person : people) {
-  cout << person.first << " is: " << person.second << "\n";
+cout << person.first << " is: " << person.second << "\n";
 }
 The output will be:
 
@@ -168,7 +168,7 @@ Example
 map<string, int, greater<string>> people = { {"John", 32}, {"Adele", 45}, {"Bo", 29} };
 
 for (auto person : people) {
-  cout << person.first << " is: " << person.second << "\n";
+cout << person.first << " is: " << person.second << "\n";
 }
 The output will be:
 

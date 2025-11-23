@@ -10,15 +10,16 @@ The addition assignment operator (+=) adds a value to a variable:
 Example
 int x = 10;
 x += 5;
-Operator	                    Example	                                Same As
-=	                            x = 5	                                x = 5	
-+=                             	x += 3	                                x = x + 3	
--=	                            x -= 3                              	x = x - 3	
-*=	                            x *= 3	                                x = x * 3	
-/=	                            x /= 3	                                x = x / 3	
-%=	                            x %= 3	                                x = x % 3	
-&=	                            x &= 3                              	x = x & 3	
-|=                          	x |= 3	                                x = x | 3	
-^=	                            x ^= 3                              	x = x ^ 3	
->>=	                            x >>= 3                                	x = x >> 3	
-<<=	                            x <<= 3	                                x = x << 3
+Operator Example Same As
+= x = 5 x = 5
++= x += 3 x = x + 3
+-= x -= 3 x = x - 3
+_= x _= 3 x = x \* 3
+/= x /= 3 x = x / 3
+%= x %= 3 x = x % 3
+&= x &= 3 x = x & 3
+|= x |= 3 x = x | 3
+^= x ^= 3 x = x ^ 3
+
+> > = x >>= 3 x = x >> 3
+> > <<= x <<= 3 x = x << 3

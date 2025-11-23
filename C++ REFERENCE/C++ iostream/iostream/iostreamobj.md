@@ -3,9 +3,8 @@ The <iostream> library provides objects which can read user input and output dat
 
 A list of all iostream objects can be found in the table below.<br>
 
-
 | Object | Description                                                                  |
-|--------|------------------------------------------------------------------------------|
+| ------ | ---------------------------------------------------------------------------- |
 | cerr   | An output stream for error messages                                          |
 | clog   | An output stream to log program information                                  |
 | cin    | An input stream that reads keyboard input from the console by default        |

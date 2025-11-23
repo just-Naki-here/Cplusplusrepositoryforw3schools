@@ -11,7 +11,7 @@ To create (often referred to as declare) a function, specify the name of the fun
 
 Syntax
 void myFunction() {
-  // code to be executed
+// code to be executed
 }
 Example Explained
 myFunction() is the name of the function
@@ -29,12 +29,12 @@ Inside main, call myFunction():
 
 // Create a function
 void myFunction() {
-  cout << "I just got executed!";
+cout << "I just got executed!";
 }
 
 int main() {
-  myFunction(); // call the function
-  return 0;
+myFunction(); // call the function
+return 0;
 }
 
 // Outputs "I just got executed!"
@@ -42,14 +42,14 @@ A function can be called multiple times:
 
 Example
 void myFunction() {
-  cout << "I just got executed!\n";
+cout << "I just got executed!\n";
 }
 
 int main() {
-  myFunction();
-  myFunction();
-  myFunction();
-  return 0;
+myFunction();
+myFunction();
+myFunction();
+return 0;
 }
 
 // I just got executed!
@@ -61,18 +61,18 @@ A C++ function consist of two parts:
 Declaration: the return type, the name of the function, and parameters (if any)
 Definition: the body of the function (code to be executed)
 void myFunction() { // declaration
-  // the body of the function (definition)
+// the body of the function (definition)
 }
 Note: If a user-defined function, such as myFunction() is declared after the main() function, an error will occur:
 
 Example
 int main() {
-  myFunction();
-  return 0;
+myFunction();
+return 0;
 }
 
 void myFunction() {
-  cout << "I just got executed!";
+cout << "I just got executed!";
 }
 
 // Error
@@ -86,11 +86,11 @@ void myFunction();
 
 // The main method
 int main() {
-  myFunction();  // call the function
-  return 0;
+myFunction(); // call the function
+return 0;
 }
 
 // Function definition
 void myFunction() {
-  cout << "I just got executed!";
+cout << "I just got executed!";
 }

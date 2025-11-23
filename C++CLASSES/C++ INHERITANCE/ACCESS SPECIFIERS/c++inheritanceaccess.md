@@ -4,27 +4,27 @@ You learned from the Access Specifiers chapter that there are three specifiers a
 Example
 // Base class
 class Employee {
-  protected: // Protected access specifier
-    int salary;
+protected: // Protected access specifier
+int salary;
 };
 
 // Derived class
 class Programmer: public Employee {
-  public:
-    int bonus;
-    void setSalary(int s) {
-      salary = s;
-    }
-    int getSalary() {
-      return salary;
-    }
+public:
+int bonus;
+void setSalary(int s) {
+salary = s;
+}
+int getSalary() {
+return salary;
+}
 };
 
 int main() {
-  Programmer myObj;
-  myObj.setSalary(50000);
-  myObj.bonus = 15000;
-  cout << "Salary: " << myObj.getSalary() << "\n";
-  cout << "Bonus: " << myObj.bonus << "\n";
-  return 0;
+Programmer myObj;
+myObj.setSalary(50000);
+myObj.bonus = 15000;
+cout << "Salary: " << myObj.getSalary() << "\n";
+cout << "Bonus: " << myObj.bonus << "\n";
+return 0;
 }

@@ -16,26 +16,26 @@ The try and catch keywords come in pairs:
 
 Example
 try {
-  // Block of code to try
-  throw exception; // Throw an exception when a problem arise
+// Block of code to try
+throw exception; // Throw an exception when a problem arise
 }
 catch () {
-  // Block of code to handle errors
+// Block of code to handle errors
 }
 Consider the following example:
 
 Example
 try {
-  int age = 15;
-  if (age >= 18) {
-    cout << "Access granted - you are old enough.";
-  } else {
-    throw (age);
-  }
+int age = 15;
+if (age >= 18) {
+cout << "Access granted - you are old enough.";
+} else {
+throw (age);
+}
 }
 catch (int myNum) {
-  cout << "Access denied - You must be at least 18 years old.\n";
-  cout << "Age is: " << myNum;
+cout << "Access denied - You must be at least 18 years old.\n";
+cout << "Age is: " << myNum;
 }
 Example explained
 We use the try block to test some code: If the age variable is less than 18, we will throw an exception, and handle it in our catch block.
@@ -50,29 +50,29 @@ You can also use the throw keyword to output a reference number, like a custom e
 
 Example
 try {
-  int age = 15;
-  if (age >= 18) {
-    cout << "Access granted - you are old enough.";
-  } else {
-    throw 505;
-  }
+int age = 15;
+if (age >= 18) {
+cout << "Access granted - you are old enough.";
+} else {
+throw 505;
+}
 }
 catch (int myNum) {
-  cout << "Access denied - You must be at least 18 years old.\n";
-  cout << "Error number: " << myNum;
+cout << "Access denied - You must be at least 18 years old.\n";
+cout << "Error number: " << myNum;
 }
 Handle Any Type of Exceptions (...)
 If you do not know the throw type used in the try block, you can use the "three dots" syntax (...) inside the catch block, which will handle any type of exception:
 
 Example
 try {
-  int age = 15;
-  if (age >= 18) {
-    cout << "Access granted - you are old enough.";
-  } else {
-    throw 505;
-  }
+int age = 15;
+if (age >= 18) {
+cout << "Access granted - you are old enough.";
+} else {
+throw 505;
+}
 }
 catch (...) {
-  cout << "Access denied - You must be at least 18 years old.\n";
+cout << "Access denied - You must be at least 18 years old.\n";
 }

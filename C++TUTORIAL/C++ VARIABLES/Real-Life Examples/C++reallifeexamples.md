@@ -28,7 +28,7 @@ int width = 6;
 int area;
 
 // Calculate the area of a rectangle
-area = length * width;
+area = length \* width;
 
 // Print the variables
 cout << "Length is: " << length << "\n";

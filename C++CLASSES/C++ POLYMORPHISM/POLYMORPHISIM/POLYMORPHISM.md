@@ -8,26 +8,26 @@ For example, think of a base class called Animal that has a method called animal
 Example
 // Base class
 class Animal {
-  public:
-    void animalSound() {
-      cout << "The animal makes a sound \n";
-    }
+public:
+void animalSound() {
+cout << "The animal makes a sound \n";
+}
 };
 
 // Derived class
 class Pig : public Animal {
-  public:
-    void animalSound() {
-      cout << "The pig says: wee wee \n";
-    }
+public:
+void animalSound() {
+cout << "The pig says: wee wee \n";
+}
 };
 
 // Derived class
 class Dog : public Animal {
-  public:
-    void animalSound() {
-      cout << "The dog says: bow wow \n";
-    }
+public:
+void animalSound() {
+cout << "The dog says: bow wow \n";
+}
 };
 Remember from the Inheritance chapter that we use the : symbol to inherit from a class.
 
@@ -36,37 +36,38 @@ Now we can create Pig and Dog objects and override the animalSound() method:
 Example
 // Base class
 class Animal {
-  public:
-    void animalSound() {
-      cout << "The animal makes a sound \n";
-    }
+public:
+void animalSound() {
+cout << "The animal makes a sound \n";
+}
 };
 
 // Derived class
 class Pig : public Animal {
-  public:
-    void animalSound() {
-      cout << "The pig says: wee wee \n";
-    }
+public:
+void animalSound() {
+cout << "The pig says: wee wee \n";
+}
 };
 
 // Derived class
 class Dog : public Animal {
-  public:
-    void animalSound() {
-      cout << "The dog says: bow wow \n";
-    }
+public:
+void animalSound() {
+cout << "The dog says: bow wow \n";
+}
 };
 
 int main() {
-  Animal myAnimal;
-  Pig myPig;
-  Dog myDog;
+Animal myAnimal;
+Pig myPig;
+Dog myDog;
 
-  myAnimal.animalSound();
-  myPig.animalSound();
-  myDog.animalSound();
-  return 0;
+myAnimal.animalSound();
+myPig.animalSound();
+myDog.animalSound();
+return 0;
 }
 Why And When To Use "Inheritance" and "Polymorphism"?
+
 - It is useful for code reusability: reuse attributes and methods of an existing class when you create a new class.

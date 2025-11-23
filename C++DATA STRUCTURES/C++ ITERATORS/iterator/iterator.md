@@ -14,7 +14,7 @@ vector<string>::iterator it;
 
 // Loop through the vector with the iterator
 for (it = cars.begin(); it != cars.end(); ++it) {
-  cout << *it << "\n";
+cout << *it << "\n";
 }
 Example explained
 First we create a vector of strings to store the names of different car manufactures.
@@ -67,7 +67,7 @@ Example
 it = cars.begin();
 
 // Modify the value of the first element
-*it = "Tesla";
+\*it = "Tesla";
 
 // Volvo is now Tesla
 The auto Keyword
@@ -86,7 +86,7 @@ In the example above, the compiler knows the type of it based on the return type
 The auto keyword works in for loops as well:
 
 for (auto it = cars.begin(); it != cars.end(); ++it) {
-  cout << *it << "\n";
+cout << \*it << "\n";
 }
 For-Each Loop vs. Iterators
 You can use a for-each loop to just loop through elements of a data structure, like this:
@@ -97,7 +97,7 @@ vector<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
 
 // Print vector elements
 for (string car : cars) {
-  cout << car << "\n";
+cout << car << "\n";
 }
 When you are just reading the elements, and don't need to modify them, the for-each loop is much simpler and cleaner than iterators.
 
@@ -109,16 +109,16 @@ vector<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
 
 // Loop through vector elements
 for (auto it = cars.begin(); it != cars.end(); ) {
-  if (*it == "BMW") {
-    it = cars.erase(it); // Remove the BMW element
-  } else {
-    ++it;
-  }
+if (\*it == "BMW") {
+it = cars.erase(it); // Remove the BMW element
+} else {
+++it;
+}
 }
 
 // Print vector elements
 for (const string& car : cars) {
-  cout << car << "\n";
+cout << car << "\n";
 }
 Iterate in Reverse
 To iterate in reverse order, you can use rbegin() and rend() instead of begin() and end():
@@ -126,7 +126,7 @@ To iterate in reverse order, you can use rbegin() and rend() instead of begin() 
 Example
 // Iterate in reverse order
 for (auto it = cars.rbegin(); it != cars.rend(); ++it) {
-  cout << *it << "\n";
+cout << \*it << "\n";
 }
 Iterate Through other Data Structures
 Iterators are great for code reusability since you can use the same syntax for iterating through vectors, lists, deques, sets and maps:
@@ -137,7 +137,7 @@ list<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
 
 // Loop through the list with an iterator
 for (auto it = cars.begin(); it != cars.end(); ++it) {
-  cout << *it << "\n";
+cout << \*it << "\n";
 }
 Deque Example
 // Create a deque called cars that will store strings
@@ -145,7 +145,7 @@ deque<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
 
 // Loop through the deque with an iterator
 for (auto it = cars.begin(); it != cars.end(); ++it) {
-  cout << *it << "\n";
+cout << \*it << "\n";
 }
 Set Example
 // Create a set called cars that will store strings
@@ -153,7 +153,7 @@ set<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
 
 // Loop through the set with an iterator
 for (auto it = cars.begin(); it != cars.end(); ++it) {
-  cout << *it << "\n";
+cout << \*it << "\n";
 }
 Map Example
 // Create a map that will store strings and integers
@@ -161,7 +161,7 @@ map<string, int> people = { {"John", 32}, {"Adele", 45}, {"Bo", 29} };
 
 // Loop through the map with an iterator
 for (auto it = people.begin(); it != people.end(); ++it) {
-  cout << it->first << " is: " << it->second << "\n";
+cout << it->first << " is: " << it->second << "\n";
 }
 Iterator Support
 The examples above shows how to iterate through different data structures that support iterators (vector, list, deque, map and set support iterators, while stacks and queues do not).
@@ -176,22 +176,22 @@ In this example, the elements are sorted alphabetically since they are strings:
 Example
 #include <iostream>
 #include <vector>
-#include <algorithm>  // Include the <algorithm> library
+#include <algorithm> // Include the <algorithm> library
 using namespace std;
 
 int main() {
-  // Create a vector called cars that will store strings
-  vector<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
+// Create a vector called cars that will store strings
+vector<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
 
-  // Sort cars in alphabetical order
-  sort(cars.begin(), cars.end());
+// Sort cars in alphabetical order
+sort(cars.begin(), cars.end());
 
-  // Print cars in alphabetical order
-  for (string car : cars) {
-    cout << car << "\n";
-  }
+// Print cars in alphabetical order
+for (string car : cars) {
+cout << car << "\n";
+}
 
-  return 0;
+return 0;
 }
 And in this example, the elements are sorted numerically since they are integers:
 
@@ -202,17 +202,17 @@ Example
 using namespace std;
 
 int main() {
-  // Create a vector called numbers that will store integers
-  vector<int> numbers = {1, 7, 3, 5, 9, 2};
+// Create a vector called numbers that will store integers
+vector<int> numbers = {1, 7, 3, 5, 9, 2};
 
-  // Sort numbers numerically
-  sort(numbers.begin(), numbers.end());
+// Sort numbers numerically
+sort(numbers.begin(), numbers.end());
 
-  for (int num : numbers) {
-    cout << num << "\n";
-  }
+for (int num : numbers) {
+cout << num << "\n";
+}
 
-  return 0;
+return 0;
 }
 To reverse the order, you can use rbegin() and rend() instead of begin() and end():
 
@@ -223,15 +223,15 @@ Example
 using namespace std;
 
 int main() {
-  // Create a vector called numbers that will store integers
-  vector<int> numbers = {1, 7, 3, 5, 9, 2};
+// Create a vector called numbers that will store integers
+vector<int> numbers = {1, 7, 3, 5, 9, 2};
 
-  // Sort numbers numerically in reverse order
-  sort(numbers.rbegin(), numbers.rend());
+// Sort numbers numerically in reverse order
+sort(numbers.rbegin(), numbers.rend());
 
-  for (int num : numbers) {
-    cout << num << "\n";
-  }
+for (int num : numbers) {
+cout << num << "\n";
+}
 
-  return 0;
+return 0;
 }
