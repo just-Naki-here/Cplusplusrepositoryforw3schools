@@ -1,4 +1,4 @@
-C++ fstream classes
+C++ fstream classes<br>
 The <fstream> library provides classes for reading and writing into files or data streams.<br>
 
 A list of useful fstream classes can be found in the table below.<br>
